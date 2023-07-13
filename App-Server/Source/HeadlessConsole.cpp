@@ -3,6 +3,8 @@
 HeadlessConsole::HeadlessConsole(std::string_view title)
 	: m_Title(title)
 {
+	// NOTE(Yan): to run in background on Linux server you'll need to comment out
+	//            the following line, since we can't std::getline with no terminal
 	m_InputThread = std::thread([this]() { InputThreadFunc(); });
 }
 

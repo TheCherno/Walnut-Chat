@@ -431,6 +431,9 @@ void ServerLayer::SaveMessageHistoryToFile(const std::filesystem::path& filepath
 
 bool ServerLayer::LoadMessageHistoryFromFile(const std::filesystem::path& filepath)
 {
+	if (!std::filesystem::exists(filepath))
+		return false;
+
 	m_MessageHistory.clear();
 
 	YAML::Node data;
