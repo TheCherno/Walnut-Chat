@@ -1,6 +1,15 @@
-# Walnut App Template
+# Walnut Chat
 
-This is a simple app template for [Walnut](https://github.com/TheCherno/Walnut) - unlike the example within the Walnut repository, this keeps Walnut as an external submodule and is much more sensible for actually building applications. See the [Walnut](https://github.com/TheCherno/Walnut) repository for more details.
+Walnut Chat is a simple client/server text chat app built with [Walnut](https://github.com/StudioCherno/Walnut) and the [Walnut-Networking](https://github.com/StudioCherno/Walnut-Networking) module. The server currently runs on both Windows (GUI/headless) and Linux (headless only), and the client is Windows only at this stage (Linux support coming soon).
 
-## Getting Started
-Once you've cloned, you can customize the `premake5.lua` and `WalnutApp/premake5.lua` files to your liking (eg. change the name from "WalnutApp" to something else).  Once you're happy, run `scripts/Setup.bat` to generate Visual Studio 2022 solution/project files. Your app is located in the `WalnutApp/` directory, which some basic example code to get you going in `WalnutApp/src/WalnutApp.cpp`. I recommend modifying that WalnutApp project to create your own application, as everything should be setup and ready to go.
+This was built as a demonstration of networking in C++ for a video on my YouTube channel. **There is no security** so be careful! Definitely don't run this as root on your server/computer and there certainly isn't any message encryption.
+
+![WalnutExample](https://hazelengine.com/images/WalnutChatClientScreenshot.jpg)
+_<center>Walnut Chat Client</center>_
+
+## Building
+### Windows
+Running `scripts/Setup.bat` will generate both `Walnut-Chat.sln` and `Walnut-Chat-Headless.sln` solution files for Visual Studio 2022. The headless variant will only include the server, running in the headless config (no GUI console app), and the `Walnut-Chat` solution can be used to build GUI versions of the client and/or server.
+
+### Linux (tested on Ubuntu 22)
+Run `scripts/Setup.sh` to generate make files for the headless server project. You can then call `make` in the root directory of the repository to build.
