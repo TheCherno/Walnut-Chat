@@ -9,8 +9,10 @@ static uint8_t* s_Buffer = new uint8_t[s_BufferSize];
 Walnut::Application* Walnut::CreateApplication(int argc, char** argv)
 {
 	Walnut::ApplicationSpecification spec;
-	spec.Name = "Walnut Chat Client 1.0";
+	spec.Name = "Walnut Chat Client 1.1";
 	spec.IconPath = "res/Walnut-Icon.png";
+	spec.CustomTitlebar = true;
+	spec.CenterWindow = true;
 
 	Walnut::Application* app = new Walnut::Application(spec);
 	std::shared_ptr<ClientLayer> clientLayer = std::make_shared<ClientLayer>();

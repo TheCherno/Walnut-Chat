@@ -2,6 +2,8 @@
 
 #include "ServerPacket.h"
 
+#include "Walnut/Application.h"
+#include "Walnut/UI/UI.h"
 #include "Walnut/Serialization/BufferStream.h"
 #include "Walnut/Networking/NetworkingUtils.h"
 #include "Walnut/Utils/StringUtils.h"
@@ -95,6 +97,9 @@ void ClientLayer::UI_ConnectionModal()
 			}
 
 		}
+
+		if (Walnut::UI::ButtonCentered("Quit"))
+			Walnut::Application::Get().Close();
 
 		if (m_Client->GetConnectionStatus() == Walnut::Client::ConnectionStatus::Connected)
 		{
