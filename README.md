@@ -2,7 +2,8 @@
 
 Walnut Chat is a simple client/server text chat app built with [Walnut](https://github.com/StudioCherno/Walnut) and the [Walnut-Networking](https://github.com/StudioCherno/Walnut-Networking) module. The server currently runs on both Windows (GUI/headless) and Linux (headless only), and the client is Windows only at this stage (Linux support coming soon).
 
-This was built as a demonstration of networking in C++ for a video on my YouTube channel. **There is no security** so be careful! Definitely don't run this as root on your server/computer and there certainly isn't any message encryption.
+This was built as a demonstration of networking in C++ for a video on my YouTube channel. **There is no security** so be careful! Definitely don't run this as root on your server/computer and there certainly isn't any message encryption. [Watch the video here](https://youtu.be/jS9rBienEFQ)
+
 
 ![WalnutExample](https://hazelengine.com/images/WalnutChatClientScreenshot.jpg)
 _<center>Walnut Chat Client</center>_
