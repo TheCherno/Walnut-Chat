@@ -9,7 +9,7 @@ static uint8_t* s_Buffer = new uint8_t[s_BufferSize];
 Walnut::Application* Walnut::CreateApplication(int argc, char** argv)
 {
 	Walnut::ApplicationSpecification spec;
-	spec.Name = "Walnut Chat Client 1.1";
+	spec.Name = "Walnut Chat Client 1.2";
 	spec.IconPath = "res/Walnut-Icon.png";
 	spec.CustomTitlebar = true;
 	spec.CenterWindow = true;

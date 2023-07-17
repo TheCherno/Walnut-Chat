@@ -52,7 +52,7 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-MAINICON                ICON                    "Walnut-Chat-Icon.ico"
+MAINICON                ICON                    "Walnut-Icon.ico"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -61,8 +61,8 @@ MAINICON                ICON                    "Walnut-Chat-Icon.ico"
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,0
- PRODUCTVERSION 1,0,0,0
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -79,10 +79,10 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "Studio Cherno"
             VALUE "FileDescription", "Walnut Chat Client"
-            VALUE "FileVersion", "1.0.0.0"
-            VALUE "LegalCopyright", "© Studio Cherno"
+            VALUE "FileVersion", "1.2.0.0"
+            VALUE "LegalCopyright", "ï¿½ Studio Cherno"
             VALUE "ProductName", "Walnut Chat Client"
-            VALUE "ProductVersion", "1.0.0.0"
+            VALUE "ProductVersion", "1.2.0.0"
         END
     END
     BLOCK "VarFileInfo"
