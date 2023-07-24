@@ -46,6 +46,13 @@ project "App-Server-Headless"
       systemversion "latest"
       defines { "WL_PLATFORM_WINDOWS" }
 
+      postbuildcommands 
+	  {
+	    '{COPY} "../%{WalnutNetworkingBinDir}/GameNetworkingSockets.dll" "%{cfg.targetdir}"',
+	    '{COPY} "../%{WalnutNetworkingBinDir}/libcrypto-3-x64.dll" "%{cfg.targetdir}"',
+	    '{COPY} "../%{WalnutNetworkingBinDir}/libprotobufd.dll" "%{cfg.targetdir}"',
+	  }
+
    filter "system:linux"
       libdirs { "../Walnut/Walnut-Networking/vendor/GameNetworkingSockets/bin/Linux" }
       links { "GameNetworkingSockets" }
