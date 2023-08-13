@@ -356,6 +356,7 @@ uint32_t ServerLayer::GetClientColor(Walnut::ClientID clientID) const
 
 void ServerLayer::SendChatMessage(std::string_view message)
 {
+	if (message.empty()) return;
 	if (message[0] == '/')
 	{
 		// Try to run command instead
