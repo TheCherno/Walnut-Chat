@@ -54,7 +54,7 @@ project "App-Server-Headless"
 	  }
 
    filter "system:linux"
-      libdirs { "../Walnut/Walnut-Networking/vendor/GameNetworkingSockets/bin/Linux" }
+      libdirs { "../Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/bin/Linux" }
       links { "GameNetworkingSockets" }
 
        defines { "WL_HEADLESS" }

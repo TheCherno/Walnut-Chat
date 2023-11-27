@@ -1,3 +1,7 @@
+# Temporary files
+*~
+*.swp
+
 # Directories
 .vs/
 bin/
@@ -9,6 +13,10 @@ bin-int/
 *.vcxproj.filters
 *.sln
 *.log
+Makefile
+ConnectionDetails.yaml
+MessageHistory.yaml
+imgui.ini
 
 # Exclude
 !vendor/bin
